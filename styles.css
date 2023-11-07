@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(at 9% 0%, #192028, #192028 73%, #7a7a7a 27%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  color: #1d1d1d;
+}
+
+form {
+  background: linear-gradient(-90deg, #fdd460, #ffaf66);
+  padding: 80px;
+  border-radius: 40px;
+  width: 665px;
+}
+
+h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  line-height: 110%;
+  text-align: center;
+  user-select: none;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 30px;
+  user-select: none;
+}
+
+.form__group {
+  margin-bottom: 30px;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  color: #1f1f1f;
+  font-size: 26px;
+  border-radius: 100px;
+  outline: none;
+  border: 2.5px solid #ffaf66;
+  font-family: Montserrat;
+}
+
+.form-field:hover,
+.form-field:focus {
+  border: 2.5px solid #04a52c;
+}
+
+.form-btn {
+  color: #fff;
+  font-size: 28px;
+  background-color: #226eff;
+  display: block;
+  width: 100%;
+  border: 2px solid #226eff;
+  padding: 20px 0;
+  border-radius: 100px;
+  font-family: Montserrat;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #0b3a92;
+}
+
+.error {
+  border: 2.5px solid #ff0606;
+}
+
+.error-message {
+  color: #ff0606;
+  font-size: 18px;
+  display: none;
+  text-align: center;
+  height: 0;
+  position: relative;
+  top: 20px;
+}
+
+.show {
+  display: block;
+}
+
+.success-message {
+  color: rgb(7, 133, 7);
+  font-size: 18px;
+  text-align: center;
+  height: 0;
+  display: none;
+  position: relative;
+  top: 20px;
+}

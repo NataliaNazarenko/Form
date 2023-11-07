@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form novalidate>
+      <h3>Fill out the form</h3>
+      <div class="form__group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-field"
+          id="name"
+          required
+          title="Please enter your name."
+          tabindex="1"
+        />
+      </div>
+      <div class="form__group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="form-field"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please enter a valid email format."
+          tabindex="2"
+        />
+      </div>
+      <div class="form__group last">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-field"
+          id="password"
+          required
+          title="Please enter your password."
+          tabindex="3"
+        />
+      </div>
+      <span class="error-message">One of the fields is incorrect</span>
+      <button type="submit" class="form-btn">Go</button>
+      <div class="success-message">Your data has been successfully sent!</div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
